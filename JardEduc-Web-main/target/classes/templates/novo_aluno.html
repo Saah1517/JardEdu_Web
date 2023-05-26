@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil Aluno</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="../css/style1.css">
+
+</head>
+
+<body>
+
+    <!--Barra do site-->
+    <header>
+        <div class="container-fluid" style="background-color: #FFE4C4;">
+            <div class="row">
+                <div class="col-3">
+                    <img src="../static/images/jardeduc.jpg"
+                        alt="Jardim da Educação" style="width: 45%;">
+                </div>
+                <div class="col">
+                    <h2> Central Jardim da Educação</h2>
+                </div>
+            </div>
+    </header>
+    <!--Sidebar do projeto-->
+    <div class="container-fluid">
+        <div class="row flex-nowrap">
+            <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0" style="background-color: rgb(138, 89, 173);">
+                <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
+                    <div class="container">
+                        <a href="hub_admin.html"
+                            class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+                            <div class="d-grid gap-2 col-6 mx-auto">
+                                <button class="btn btn-success" type="button">Painel</button>
+                            </div>
+                        </a>
+                    </div>
+
+
+                    <!--Opções da Sidebar-->
+                    <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start"
+                        id="menu">
+                        <li class="nav-item">
+                            <a href="perfil_aluno.html" class="nav-link align-middle px-0" style="color: rgb(0, 0, 0);">
+                                <i class="fs-4 bi-house"></i><span class="ms-1 d-none d-sm-inline"><img src=""
+                                        style="width: 30%;">Perfil do
+                                    Aluno</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="desempenho.html" class="nav-link px-0 align-middle px-0"
+                                style="color: rgb(0, 0, 0);">
+                                <i class="fs-4 bi-table"></i> <span class="ms-1 d-none d-sm-inline"><img
+                                        src="">Desempenho</span></a>
+                        </li>
+
+                        <li>
+                            <a href="planejamento_aulas.html" class="nav-link px-0 align-middle px-0"
+                                style="color: rgb(0, 0, 0);">
+                                <i class="fs-4 bi-people"></i> <span class="ms-1 d-none d-sm-inline"><img
+                                        src="">Planejamento da
+                                    Aula</span> </a>
+                        </li>
+
+                        <!--    <li>
+                            <a href="home.html" class="nav-link px-0 align-middle">
+                                <i class="fs-4 bi-people"></i> <span
+                                    class="ms-1 d-none d-sm-inline">Configurações</span> </a>
+                        </li>-->
+                    </ul>
+                    <hr>
+                </div>
+            </div>
+
+            <!--Área de Trabalho-->
+            <div class="col py-3" style="background-color: #FCFAD2;">
+                <div class="container">
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <div class="row">
+                                <div class="col">
+                                    <p
+                                        style="color: green; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; font-size: xx-large;">
+                                        Novo aluno</p>
+                                </div>
+                            </div>
+
+
+
+
+                            <div class="container mx-auto" style="width: 800px;">
+                                <form>
+                                </form>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="mb-3">
+                                <label for="novoalunoInputNome" class="form-label">Nome do Aluno</label>
+                                <input type="text" class="form-control" id="novoalunoInputNome" style="background-color: rgb(138, 89, 173);">
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="mb-3">
+                                <label for="novoalunoInputEmail" class="form-label">Endereço de Email</label>
+                                <input type="email" class="form-control" id="novoalunoInputEmail" style="background-color: rgb(138, 89, 173);">
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="mb-3">
+                                <label for="novoalunoInputPassword" class="form-label">Senha</label>
+                                <input type="password" class="form-control" id="novoalunoInputPassword" style="background-color: rgb(138, 89, 173);">
+                              </div>
+                        </li>
+                        <Li class="list-group-item">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="mb-3 form-check">
+                                        <input type="checkbox" class="form-check-input" id="novoalunoPre1">
+                                        <label class="form-check-label" for="novoalunoPre1">Pre 1</label>
+                                      </div>
+                                </div>
+                                <div class="col">
+                                    <div class="mb-3 form-check">
+                                        <input type="checkbox" class="form-check-input" id="novoalunoPre2">
+                                        <label class="form-check-label" for="novoalunoPre2">Pre 2</label>
+                                      </div>
+                                </div>
+                                <div class="col">
+                                    <div class="mb-3 form-check">
+                                        <input type="checkbox" class="form-check-input" id="novoalunoPre3">
+                                        <label class="form-check-label" for="novoalunoPre3">Pre 3</label>
+                                      </div>
+                                </div>
+                            </div>
+                        </Li>
+                        <li class="list-group-item">
+                            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                            <a href="perfil_aluno.html">
+                                <button class="btn btn-success btn-lg" type="button">Salvar Alterações</button>
+                            </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

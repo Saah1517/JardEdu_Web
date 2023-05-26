@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="Viewport" content="width=device-width, initial-scale='" 1.0>
+    <meta http-equiv="X-UA-compatible" content="ie-edge">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+
+    <!--Barra do site-->
+    <header>
+        <div class="container-fluid" style="background-color: #FCFAD2;">
+            <div class="row">
+                <div class="col-3">
+                    <img src="../static/images/jardeduc.jpg"
+                        alt="Jardim da Educação" style="width: 45%;">
+                </div>
+                <div class="col">
+                    <h2> Central Jardim da Educação</h2>
+                </div>
+            </div>
+    </header>
+
+    <body>
+
+        <!-- Creating of a container class that
+            store other useful classes -->
+        <div class="container">
+    
+            <!-- Creating a ui-widgets classes that
+                store other useful classes like
+                ui-values and ui-labels -->
+            <div class="ui-widgets">
+                <div class="ui-values">100%</div>
+                <div class="ui-labels">Mariana da Silva Souza</div>
+            </div>
+    
+            <div class="ui-widgets">
+                <div class="ui-values">50%</div>
+                <div class="ui-labels">Anna Bia</div>
+            </div>
+    
+            <div class="ui-widgets">
+                <div class="ui-values">25%</div>
+                <div class="ui-labels">Heitor Silva Gomes</div>
+            </div>
+        </div>
+    </body>
+
+	<style>
+
+		/* Apply css properties to h1 element */
+		h1 {
+			text-align: center;
+		}
+
+		/* Create a container using CSS properties */
+		.container {
+			top: 70%;
+			left: 55%;
+			position: absolute;
+			text-align: center;
+			transform: translate(-50%, -50%);
+		}
+
+		/* Apply CSS properties to ui-widgets class */
+		.ui-widgets {
+			position: relative;
+			display: inline-block;
+			width: 15rem;
+			height: 15rem;
+			border-radius: 9rem;
+			margin: 1.5rem;
+			border: 1.6rem solid black;
+			box-shadow: inset 0 0 7px black;
+			border-left-color: yellow;
+			border-top-color: yellow;
+			border-right-color: yellow;
+			border-bottom-color: yellow;
+			text-align: center;
+			box-sizing: border-box;
+		}
+
+		/* Apply css properties to the second
+			child of ui-widgets class */
+		.ui-widgets:nth-child(2) {
+			border-top-color: gray;
+			border-right-color: white;
+			border-left-color: gray;
+			border-bottom-color: white;   
+		}
+
+           /* Apply css properties to the second
+			child of ui-widgets class */
+		.ui-widgets:nth-child(3) {
+			border-top-color: white;
+			border-right-color: white;
+			border-left-color: brown;
+			border-bottom-color: white;  
+        }
+
+		/* Apply css properties to ui-widgets class
+			and ui-values class*/
+		.ui-widgets .ui-values {
+			top: 70px;
+			position: absolute;
+			left: 10px;
+			right: 0;
+			font-weight: 700;
+			font-size: 2.0rem;
+
+		}
+
+		/* Apply css properties to ui-widgets
+			class and ui-labels class*/
+		.ui-widgets .ui-labels {
+
+			left: 0;
+			bottom: -16px;
+			text-shadow: 0 0 4px grey;
+			color: black;
+            top: 220px;
+			position
+            : absolute;
+			width: 100%;
+			font-size: 16px;
+		}
+	</style>
+
+<head>
+    
+</head>
+
+         <!--Sidebar do projeto-->
+        <div class="container-fluid">
+            <div class="row flex-nowrap">
+                <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0" style="background-color: rgb(43, 1, 73);">
+                    <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
+                        <a href="hub_admin.html"
+                            class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+                            <span class="fs-5 d-none d-sm-inline">Painel</span>
+                        </a>
+
+                        <!--Opções da Sidebar-->
+                        <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start"
+                            id="menu">
+                            <li class="nav-item">
+                                <a href="perfil_aluno.html" class="nav-link align-middle px-0">
+                                    <i class="fs-4 bi-house"></i><span class="ms-1 d-none d-sm-inline">Perfil do Aluno</span>
+                                </a>
+                            </li>
+    
+                            <li>
+                                <a href="#" class="nav-link px-0 align-middle">
+                                    <i class="fs-4 bi-table"></i> <span
+                                        class="ms-1 d-none d-sm-inline">Desempenho</span></a>
+                            </li>
+    
+                            <li>
+                                <a href="planejamento_aulas.html" class="nav-link px-0 align-middle">
+                                    <i class="fs-4 bi-people"></i> <span class="ms-1 d-none d-sm-inline">Planejamento da Aula</span> </a>
+                            </li>
+    
+                        <!--   <li>
+                                <a href="home.html" class="nav-link px-0 align-middle">
+                                    <i class="fs-4 bi-people"></i> <span
+                                        class="ms-1 d-none d-sm-inline">Configurações</span> </a>
+                            </li> -->
+                        </ul>
+                        <hr>
+                    </div>
+                </div>
+
+        <!--Área de trabalho-->
+        <div class="col py-3"
+
+        <div class="container">
+            <ul class="list-group">
+            <li class="list-group-item">   
+            <p style="color: purple; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; font-size: xx-large; text-align: center;">Ranking</p>
+            <p style="color: gray; text-align: center;">Classificação e Frequência dos Alunos</p>
+            </li>
+    
+            <li class="list-group-item">
+                <div class="row">
+                     <div class="col-2"></div>
+                     <div class="col"><p>Mariana da Silva Souza</p></div>
+                     <div class="col-4">Primeiro Lugar</div>
+                </div>
+            </li>
+
+            <li class="list-group-item">
+                <div class="row">
+                     <div class="col-2"></div>
+                     <div class="col"><p>Anna Bia</p></div>
+                     <div class="col-4">Segundo Lugar</div>
+                </div>
+            </li>
+    
+            <li class="list-group-item">
+                <div class="row">
+                     <div class="col-2"></div>
+                     <div class="col"><p>Heitor Silva Gomes</p></div>
+                     <div class="col-4">Terceiro Lugar</div>
+            </li>
+
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+                    integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+                    crossorigin="anonymous"></script>
+        </div>          
+       
+</body>
+</html
